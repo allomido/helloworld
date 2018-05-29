@@ -2,6 +2,7 @@ pipeline {
   agent any
   stages {
     stage('step1') {
+      agent any
       steps {
         sh '''echo "HELLO WORLD"
 java -version'''
